@@ -1,4 +1,5 @@
 Assignment # 4 - SQL Project (Part 1):  From ER Design ToImplementation - Paper Review Database(Due: 4/21/2019 @ 11:59PM) [150 Points]
+
 In this project you will take an existing ER design and implement a relational database.  
 You will be implementing the database that we modeled the “paper reviewers” database we designed in Assignment 3’s problem # 3.34 (see the assignment’s key for details).This project will be split into two parts. 
 The first part will include setting up your developmentenvironment (installing MySQL), writing SQL scripts to create the tables (entities), constraintsetc modeled in the ER Diagram. You will also write SQL scripts to insert data into all the tablesyou created. 
