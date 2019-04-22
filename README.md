@@ -2,7 +2,7 @@ Pace Spring 2019 DBMS Assignment 4
 
 Cesar Santana - U01198843
 
-File name  contains scripts to:
+File name PAPER_REVIEW.sql contains scripts to:
 
 Create the database PaperReviews
 Work with the PaperReviews database by executing USE PaperReviews
@@ -13,9 +13,9 @@ Creates the following tables:
 - REVIEWER
 - TOPIC
 - REVIEW
-- SUBMITS_PAPER
-- ASSIGNED_REVIEWER
-- SUBMITS_REVIEW
-- HAS
+- AUTHOR_SUBMISSION
+- PAPER_REVIEWER
+- REVIEWER_HAS_TOPIC
+- REVIEWER_SUBMIT_REVIEW
 
 Insert data from the file titled 
