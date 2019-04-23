@@ -18,4 +18,4 @@ Creates the following tables:
 - REVIEWER_HAS_TOPICS
 - REVIEWER_SUBMIT_REVIEWS
 
-Insert data from the file titled 
+Insert data from the file titled InsertData.sql
