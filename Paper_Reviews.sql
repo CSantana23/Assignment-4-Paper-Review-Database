@@ -24,13 +24,15 @@ CREATE TABLE Papers (
 #Creating Reviewer Table with EmailAddr as Primary Key
 
 CREATE TABLE Reviewers (
-	EmailAddr VARCHAR(255) PRIMARY KEY,
-	FirstName VARCHAR(255) NOT NULL,
-	LastName VARCHAR(255) NOT NULL,
-	AuthorFeedBack TEXT,
-	CommiteeFeedBack TEXT,
-	PhoneNum VARCHAR(13) NOT NULL,
-	Affiliation VARCHAR(255) NOT NULL
+	emailAddr VARCHAR(255) PRIMARY KEY,
+	firstName VARCHAR(255) NOT NULL,
+	lastName VARCHAR(255) NOT NULL,
+	authorFeedBack TEXT,
+	commiteeFeedBack TEXT,
+	phoneNum VARCHAR(13) NOT NULL,
+	affiliation VARCHAR(255) NOT NULL,
+	topicId INT NOT NULL,
+FOREIGN KEY (topicId) REFERENCES Topic(id)
 );
 
 #Creating Topic Table with ID as Primary Key
