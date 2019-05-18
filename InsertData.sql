@@ -27,14 +27,14 @@ VALUES
 
 #Add data to REVIEWER table
 
-INSERT INTO Reviewer (EmailAddr, FirstName, LastNAme, AuthorFeedback, CommiteeFeedback, PhoneNum, Affiliation) 
+INSERT INTO Reviewer (emailAddr, firstName, lastName, authorFeedBack, commiteeFeedBack, phoneNum, affiliation, topicId)
 VALUES
-('jscott@mercy.edu','Scott','James',"This was very good.","Decent read. Okay at best.",'902-435-0985','JGR');
-('msklp@yahoo.com','Frank','Castilla',"It was to long.","The paper was not very clear. Needs revision. This is great",'908-837-9032','SLIKE'),
-('throms@gmail.com','John','Locke',"Maybe a different topic.","I enjoyed this paper. This is great",'879-435-2352','WPPP'),
-('strev@outlook.com','Edwin','Stevonsjp',"Minor changes but good overall.","Everything is okay.",'832-784-9087','PLGR');
-('Kiplo@hotmal.com','Luistra','Thomas',"Best Paper I've read.","Very insightful.",'807-467-7823','KNOP'),
-('tiredaswell@gmail.com','Walker','Susan',"Great topic to write on.","Might have a chance to be published.",'647-324-8976','YULK');
+('jscott@mercy.edu','Scott','James',"This was very good.","Decent read. Okay at best.",'(902)-435-0985','JGR', 1);
+('msklp@yahoo.com','Frank','Castilla',"It was to long.","The paper was not very clear. Needs revision. This is great",'(908)-837-9032','SLIKE', 2),
+('throms@gmail.com','John','Locke',"Maybe a different topic.","I enjoyed this paper. This is great",'(879)-435-2352','WPPP', 3),
+('strev@outlook.com','Edwin','Stevonsjp',"Minor changes but good overall.","Everything is okay.",'(832)-784-9087','PLGR', 4);
+('Kiplo@hotmal.com','Luistra','Thomas',"Best Paper I've read.","Very insightful.",'(807)-467-7823','KNOP', 5),
+('tiredaswell@gmail.com','Walker','Susan',"Great topic to write on.","Might have a chance to be published.",'(647)-324-8976','YULK', 6);
 
 #Add data to REVIEW table
 
