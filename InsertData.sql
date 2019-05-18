@@ -11,19 +11,19 @@ VALUES
 
 
 #Add data to PAPER table
-INSERT INTO Papers (Title, Abstract, FileName) 
+INSERT INTO Papers (title, authorId, reviewerId, abstract, fileName) 
 VALUES 
-('Learn How To Start SCIENCE',"Let us say that you are 34 years old and a perfectly good adult who draws a complete blank when wondering what science and research are all about.  Even though you passed all the required science courses in school, you view scientific research as something of no concern to you, and scientists as weird creatures from another planet.",'science.pdf'),
+('Learn How To Start SCIENCE','caronni@mac.com', 'jscott@mercy.edu',"Let us say that you are 34 years old and a perfectly good adult who draws a complete blank when wondering what science and research are all about.  Even though you passed all the required science courses in school, you view scientific research as something of no concern to you, and scientists as weird creatures from another planet.",'science.pdf'),
 
-('The GLASS That Wins Customers', "Growing and retaining your current customers is smart business. Companies that focus on and strive to delight their customers outperform in the marketplace", 'glassideas.pdf'),
+('The GLASS That Wins Customers', 'matsn@comcast.net', 'msklp@yahoo.com', "Growing and retaining your current customers is smart business. Companies that focus on and strive to delight their customers outperform in the marketplace", 'glassideas.pdf'),
 
-('NEW YORK Iphone Apps',"The busy nature of the city requires a high degree of technical needs in order to keep up with the most detailed information such as the arrival time of the next subway, the nearest eateries, nearest public restroom, fastest route to a particular destination.",'nyc.pdf'),
+('NEW YORK Iphone Apps','bebing@aol.com', 'throms@gmail.com', "The busy nature of the city requires a high degree of technical needs in order to keep up with the most detailed information such as the arrival time of the next subway, the nearest eateries, nearest public restroom, fastest route to a particular destination.",'nyc.pdf'),
 
-('WATER Your Way To Success',"There are a few ways you can judge whether you are hydrated enough. If your urine is clear or pale yellow, you’re set. You can also measure it by drinking as much water as it takes to keep your lips and mouth moist throughout the day.",'successfuls.pdf'),
+('WATER Your Way To Success','Storerm@yahoo.ca','strev@outlook.com',"There are a few ways you can judge whether you are hydrated enough. If your urine is clear or pale yellow, you’re set. You can also measure it by drinking as much water as it takes to keep your lips and mouth moist throughout the day.",'successfuls.pdf'),
 
-('How To Start A Business With PHYSICS',"Some physicists can be thankful for the overall health and vitality of physics that some brave souls do risk their money and careers by setting up businesses to commercialize their findings.",'businessideas.pdf'),
+('How To Start A Business With PHYSICS','Brainless@outlook.com','Kiplo@hotmal.com',"Some physicists can be thankful for the overall health and vitality of physics that some brave souls do risk their money and careers by setting up businesses to commercialize their findings.",'businessideas.pdf'),
 
-('Get The Most Out of ECONOMY and Facebook',"I have been in school, learning the Facebook Platform for about two years - almost from the group's inception. My experience has been educational, and personally rewarding. The group has been one of the best associations I have been involved in during my professional life.",'econ.pdf');
+('Get The Most Out of ECONOMY and Facebook','markjugg@hotmail.com','tiredaswell@gmail.com',"I have been in school, learning the Facebook Platform for about two years - almost from the group's inception. My experience has been educational, and personally rewarding. The group has been one of the best associations I have been involved in during my professional life.",'econ.pdf');
 
 #Add data to REVIEWER table
 
