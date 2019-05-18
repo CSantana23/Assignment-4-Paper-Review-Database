@@ -1,6 +1,6 @@
 #Add data to AUTHOR table
 
-INSERT INTO Author (EmailAddr, FirstName, LastName) 
+INSERT INTO author (emailAddr, firstName, lastName) 
 VALUES 
 ('caronni@mac.com','Alica','Caronni'),
 ('matsn@comcast.net','Sterling','Matthew'),
