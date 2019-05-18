@@ -15,10 +15,14 @@ CREATE TABLE Authors (
 #Auto_Increment function keeps the primary key from repeating
 
 CREATE TABLE Papers (
-	Id INT PRIMARY KEY AUTO_INCREMENT,
-	Title VARCHAR(255) NOT NULL,
-	Abstract TEXT,
-	FileName VARCHAR(255) NOT NULL
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	title VARCHAR(255) NOT NULL,
+	absrract TEXT,
+	fileName VARCHAR(255) NOT NULL,
+	authorId VARCHAR(255) NOT NULL,
+	reviewerId VARCHAR(255) NOT NULL, 
+	FOREIGN KEY (authorId) REFERENCES Author(emailAddr),
+	FOREIGN KEY (reviewerId) REFERENCES Reviewer(emailAddr) 
 );
 
 #Creating Reviewer Table with EmailAddr as Primary Key
