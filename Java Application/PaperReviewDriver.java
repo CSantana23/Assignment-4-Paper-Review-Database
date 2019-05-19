@@ -237,7 +237,7 @@ public class Main {
 
 		
 				System.out.println("Number of Rows Deleted: " + deletedRows);
-				
+				System.out.println("The author cannot be deleted, since it is a parent row that is being referenced by a column in Paper as a foreign key named 'AuthorId'.");
 
 		} catch (SQLException e) {
 			e.printStackTrace();
