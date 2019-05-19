@@ -17,16 +17,23 @@ public class Main {
 
 		// TODO: Replace "author@gmail.com" with an actual email address in your
 		// database
-		printPaperByAuthorId(conn, "caronni@mac.com");
+		printPaperByAuthorId(conn, "author@gmail.com");
+		
+		//count all papers
 		countAllPapers(conn);
-		//Insert new author
-		Author author = new Author("newwriter.gmail.com", "sam", "jon");
+		
+		//****************************************************************
+		//Insert new author email, first name and last name
+		Author author = new Author("newman.fake.com", "sam", "jon");
+		
 		//Insert existing author email and reviewer email
 		Paper paper = new Paper("Made up","This is only a test", "nothing.txt", "Brainless@outlook.com", "jscott@mercy.edu ");
+		
 		//Method for new entry
 		createNewEntry(conn,author,paper);
+		//****************************************************************
 		
-		//Method to delete author
+		//Method to delete author replace nothing@gmail.com
 		deleteAuthor(conn, "nothing@gmail.com");
 	}
 
@@ -34,8 +41,8 @@ public class Main {
 	public static Connection getConnection() throws Exception {
 		try {
 			String driver = "com.mysql.jdbc.Driver";
-			String url = "jdbc:mysql://localhost:3306/paperreview";
-			String username = "newuser";
+			String url = "jdbc:mysql://localhost:3306/paperreview"; //change to match database location
+			String username = "newuser"; //change to match database
 			String password = "password";
 			Class.forName(driver);
 
@@ -67,21 +74,18 @@ public class Main {
 			// 3. Execute the statement
 			ResultSet rs = preparedSelect.executeQuery();
 
-			// To read/use the results of a SELECT query, you must...
+			
 
 			// 1. Call rs.next( )
 			while (rs.next()) {
-				// 2. Call rs.getInt( ), rs.getString( ), etc...
 				int id = rs.getInt("paper.id");
 				String title = rs.getString("paper.title");
 				String abtract = rs.getString("paper.abstract");
 				String emailAddr = rs.getString("author.emailAddr");
 				String firstName = rs.getString("author.firstName");
 				String lName = rs.getString("author.lastName");
-				// TODO: Finish "getting" all of the fields from the result set, and printing
-				// them
-				// ...
 
+				//Print out the results of the query
 				System.out.println("Paper: \n ID: " + id + "\n Title: " + title + "\n Paper Abstract: " + abtract
 						+ "\n Author Email: " + emailAddr + "\n Author First Name: " + firstName
 						+ "\n Author Last Name: " + lName);
@@ -97,6 +101,7 @@ public class Main {
 			e.printStackTrace();
 		}
 		System.out.println("the end of the program");
+		System.out.println("*******************************************************");
 	}
 
 	// Get paper reviews by Paper Id
@@ -114,8 +119,6 @@ public class Main {
 			// 3. Execute the statement
 			ResultSet rs = preparedSelect.executeQuery();
 
-			// To read/use the results of a SELECT query, you must...
-
 			// 1. Call rs.next( ) //change to match column in database
 			while (rs.next()) {
 				// 2. Call rs.getInt( ), rs.getString( ), etc...
@@ -127,9 +130,6 @@ public class Main {
 				int originality = rs.getInt("review.originalityScore");
 				int papersId = rs.getInt("review.paperId");
 				String reviewersId = rs.getString("review.reviewerId");
-				// TODO: Finish "getting" all of the fields from the result set, and printing
-				// them
-				// ...
 
 				System.out.println("Paper: \n ID: " + id + "\n Recommendation " + recommendation + "\n Merit Score " + meritScore
 						+ "\n Readability " + readAbility + "\n relevance " + relevance
@@ -146,6 +146,7 @@ public class Main {
 			e.printStackTrace();
 		}
 		System.out.println("the end of the program");
+		System.out.println("*******************************************************");
 	}
 
 	
@@ -215,6 +216,7 @@ public class Main {
 			e.printStackTrace();
 		}
 		System.out.println("the end of the program");
+		System.out.println("*******************************************************");
 	}
 	//delete Author
 	public static void deleteAuthor(Connection conn, String emailAddr) {
@@ -237,6 +239,7 @@ public class Main {
 			e.printStackTrace();
 		}
 		System.out.println("the end of the program");
+		System.out.println("*******************************************************");
 	}
 
 
