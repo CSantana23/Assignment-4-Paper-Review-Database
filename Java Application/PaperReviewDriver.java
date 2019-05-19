@@ -15,9 +15,11 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 		Connection conn = getConnection();
 
-		// TODO: Replace "author@gmail.com" with an actual email address in your
-		// database
+		//Replace "author@gmail.com" with author email
 		printPaperByAuthorId(conn, "author@gmail.com");
+		
+		//Replace the number 3 with a paperId
+		getPaperReviewsById(conn, 3);
 		
 		//count all papers
 		countAllPapers(conn);
@@ -184,6 +186,7 @@ public class Main {
 			e.printStackTrace();
 		}
 		System.out.println("the end of the program");
+		System.out.println("*******************************************************");
 	}
 	// Create a new entry
 	public static void createNewEntry(Connection conn, Author author, Paper paper) {
@@ -234,6 +237,7 @@ public class Main {
 
 		
 				System.out.println("Number of Rows Deleted: " + deletedRows);
+				
 
 		} catch (SQLException e) {
 			e.printStackTrace();
